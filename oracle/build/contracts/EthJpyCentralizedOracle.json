@@ -1,0 +1,100 @@
+{
+  "contract_name": "EthJpyCentralizedOracle",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "lastUpdateTimestamp",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "isStillValid",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getRate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "rate",
+          "type": "uint8"
+        }
+      ],
+      "name": "update",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_rate",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "rate",
+          "type": "uint8"
+        }
+      ],
+      "name": "RateUpdated",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b60405160408061026d8339810160405280516020909101515b60008054600160a060020a031916600160a060020a0384161760a060020a60ff0219167401000000000000000000000000000000000000000060ff8416021790555b50505b6101f4806100796000396000f300606060405263ffffffff60e060020a60003504166314bcec9f811461004d5780631ac2827e1461006f578063679aefce146100935780638da5cb5b146100b5578063f929dba7146100e1575bfe5b341561005557fe5b61005d6100f9565b60408051918252519081900360200190f35b341561007757fe5b61007f6100ff565b604080519115158252519081900360200190f35b341561009b57fe5b61005d610110565b60408051918252519081900360200190f35b34156100bd57fe5b6100c5610134565b60408051600160a060020a039092168252519081900360200190f35b34156100e957fe5b6100f760ff60043516610143565b005b60015481565b6000603c6001544203111590505b90565b600061011a6100ff565b151561012257fe5b5060005460a060020a900460ff165b90565b600054600160a060020a031681565b60005433600160a060020a0390811691161461015f5760006000fd5b60015442141561016b57fe5b426001556000805460ff831660a060020a810260a060020a60ff02199092169190911790915560408051918252517f7b9117435eafa935728d48c600b0c42d9be6fffadcc5b95f8e900eb11a8070de9181900360200190a15b5b505600a165627a7a7230582051ee1d463fcdea9db4c268ae5d5191ae9c074d1c04dfaa198072d584d49b73b50029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1496941742615
+}
