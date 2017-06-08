@@ -12,8 +12,6 @@ contract('CentralizedOracle', function(accounts) {
   it("should set a result", function() {
     var oracle;
     // Set owner
-    console.log(CentralizedOracle)
-
     return CentralizedOracle.new(accounts[0], {from: accounts[0]}).then(function(instance) {
       oracle = instance;
       return oracle.reply(1, "res", {from: accounts[0]});

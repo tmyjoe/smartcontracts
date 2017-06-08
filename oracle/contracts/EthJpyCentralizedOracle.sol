@@ -33,6 +33,7 @@ contract EthJpyCentralizedOracle {
     function EthJpyCentralizedOracle(address _owner, uint8 _rate) public {
         owner = _owner;
         lastRate = _rate;
+        lastUpdateTimestamp = now;
     }
 
     // check if the price data is valid or not.
