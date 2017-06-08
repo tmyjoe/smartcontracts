@@ -1,0 +1,128 @@
+{
+  "contract_name": "CentralizedOracle",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "data",
+          "type": "bytes32"
+        }
+      ],
+      "name": "query",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "requestID",
+          "type": "uint256"
+        },
+        {
+          "name": "response",
+          "type": "bytes32"
+        }
+      ],
+      "name": "reply",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "NewRequest",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "Reply",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b6040516020806102c683398101604052515b60008054600160a060020a031916600160a060020a0383161790555b505b61027b8061004b6000396000f300606060405263ffffffff60e060020a6000350416638da5cb5b8114610037578063a3b61a9c14610063578063fc7c793114610078575bfe5b341561003f57fe5b610047610090565b60408051600160a060020a039092168252519081900360200190f35b341561006b57fe5b61007660043561009f565b005b341561008057fe5b610076600435602435610111565b005b600054600160a060020a031681565b600180548082016100b08382610204565b916000526020600020900160005b50604080516020808201835290859052918490556001548151600019909101815290517fe5e7dd91b3ed7fb84c335f117423d1b9bbbed2d76c57e81520dd681b9ede988593509081900390910190a15b50565b60005433600160a060020a0390811691161461012d5760006000fd5b600380548390811061013b57fe5b90600052602060002090602091828204019190065b9054906101000a900460ff16156101675760006000fd5b604080518381526020810183905281517fc6f75caf02e4cd6e7c2d7f1b976a4d4072cbbacfc0165e67786bdd09ddff4ecb929181900390910190a1806002838154811015156101b257fe5b906000526020600020900160005b50556003805460019190849081106101d457fe5b90600052602060002090602091828204019190065b6101000a81548160ff0219169083151502179055505b5b5050565b8154818355818115116102285760008381526020902061022891810190830161022e565b5b505050565b61024c91905b808211156102485760008155600101610234565b5090565b905600a165627a7a723058200fd544fd222fd3f28cfd400ec066924062f45aa7b617e3634417a6ed44680f260029",
+  "networks": {
+    "1496853227711": {
+      "events": {
+        "0xe5e7dd91b3ed7fb84c335f117423d1b9bbbed2d76c57e81520dd681b9ede9885": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "name": "NewRequest",
+          "type": "event"
+        },
+        "0xc6f75caf02e4cd6e7c2d7f1b976a4d4072cbbacfc0165e67786bdd09ddff4ecb": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "",
+              "type": "bytes32"
+            }
+          ],
+          "name": "Reply",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x9ffa1e17540e3f45fbf2322012443099ed236724",
+      "updated_at": 1496933729633
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1496933729633
+}

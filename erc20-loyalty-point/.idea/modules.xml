@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/erc20-loyalty-point.iml" filepath="$PROJECT_DIR$/.idea/erc20-loyalty-point.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../oracle/oracle.iml" filepath="$PROJECT_DIR$/../oracle/oracle.iml" />
     </modules>
   </component>
 </project>
