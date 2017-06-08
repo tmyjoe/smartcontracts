@@ -4,14 +4,14 @@ pragma solidity 0.4.11;
 // A centralized oracle.
 contract CentralizedOracle {
 
-    event NewRequest(uint);
-    event Reply(uint, bytes32);
+    event NewRequest(uint requestID);
+    event Reply(uint requestID, string result);
 
     address public owner;
 
     uint8 numOfRequests;
     mapping(uint => bytes32) requests;
-    mapping(uint => bytes32) results;
+    mapping(uint => string) results;
     mapping(uint => bool) public isSet;
 
     /*
@@ -20,11 +20,12 @@ contract CentralizedOracle {
     modifier isOwner() {
         if (msg.sender != owner)
         // Only owner is allowed to proceed
-        revert();
+            revert();
         _;
     }
 
     /*
+
     * Constructor.
     */
     function CentralizedOracle(address _owner) public {
@@ -40,7 +41,7 @@ contract CentralizedOracle {
         numOfRequests++;
     }
 
-    function reply(uint requestID, bytes32 response)
+    function reply(uint requestID, string response)
     public
     isOwner
     {
