@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../e-publich/e-publich.iml" filepath="$PROJECT_DIR$/../e-publich/e-publich.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../e-publish/e-publish.iml" filepath="$PROJECT_DIR$/../e-publish/e-publish.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/erc20-loyalty-point.iml" filepath="$PROJECT_DIR$/.idea/erc20-loyalty-point.iml" />
       <module fileurl="file://$PROJECT_DIR$/../oracle/oracle.iml" filepath="$PROJECT_DIR$/../oracle/oracle.iml" />
     </modules>
