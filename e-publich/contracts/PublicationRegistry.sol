@@ -2,7 +2,6 @@ pragma solidity ^0.4.0;
 
 import "./Publication.sol";
 
-
 contract PublicationRegistry {
 
     mapping(uint => mapping(address => bool)) buyer;

@@ -1,7 +1,5 @@
 pragma solidity ^0.4.0;
 
-
-// TODO: Implement multisig wallet function
 contract Publication {
 
     address owner;
@@ -14,13 +12,19 @@ contract Publication {
         _;
     }
 
-    function Publication(uint _price, bytes _ipfsHash){
+    function Publication(uint _price, bytes _ipfsHash) public {
         owner = msg.sender;
         price = _price;
         ipfsHash = _ipfsHash;
     }
 
-    function pay() payable {}
+    function pay() public payable {}
+
+    function updateHash(bytes _ipfsHash)
+    onlyOwner
+    {
+        ipfsHash = _ipfsHash;
+    }
 
     function withdraw(uint _amount, address _to, bytes _data)
     onlyOwner
